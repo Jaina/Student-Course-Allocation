@@ -67,6 +67,10 @@ a:hover {
   display: none;
 }
 
+.table {
+  color: white;
+}
+
 h1 {
   text-align: center;
   color: #ffffff;
