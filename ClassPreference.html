@@ -15,7 +15,7 @@
      <div id="signupForCourse">   
             <h1>Enter you preference of Courses for the next semester</h1>
             
-            <form action="/" method="post">
+            <form name="myform" action="/" method="post" onsubmit="doSubmit()">
             
             <div class="top-row">
               <div class="field-wrap">
@@ -73,8 +73,9 @@
               </div>
 
               </form>
-              <button class="button button-block" onclick="myFunction()">Submit</button>
-              <a href="Student.html"><button class="button button-block" type="button">Back</button></a>
+              <div>
+              <a href="Student.html"><button class="button button-block" type="button">Submit</button></a>
+              </div>
 
               
               </div>
@@ -83,11 +84,12 @@
     </div> <!-- /form -->
 
     <script>
-      function myFunction() {$.post( "www.google.com", function( data ) {
-                 //As soon as the browser finished downloading, this function is called.
-                 $('#demo').html(data);
-            });
-    }
+     
+    function dosubmit()
+  {
+      document.myform.action = "Student.html?" + document.myform.Courses.value;
+      window.event.returnValue = true;
+}
     </script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
