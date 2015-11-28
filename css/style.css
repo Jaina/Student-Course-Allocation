@@ -132,6 +132,7 @@ textarea {
 }
 
 .field-wrap {
+  color: white;
   position: relative;
   margin-bottom: 40px;
 }
