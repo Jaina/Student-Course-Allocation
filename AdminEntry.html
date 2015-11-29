@@ -15,20 +15,42 @@
       <div id="adminEntry">   
         <h1>Admin Preferences</h1>
           <form action="/" method="post">
+           <div class="field-wrap">
+             <label>
+                  Select A Semester <span class="req">*</span>
+                </label>
+            <select>
+              <option>Select A Semester:</option>
+              <option value="1">Fall</option>
+              <option value="2">Summer</option>
+              <option value="3">Winter</option>
+            </select>
+            </div>
             <div class="field-wrap">
+             <label>
+                  Select A Course: <span class="req">*</span>
+                </label>
+            <select>
+              <option>Select A Course:</option>
+              <option value="1">CS-6300</option>
+              <option value="2">CS-6301</option>
+              <option value="3">CS-7543</option>
+            </select>
+            </div>
+            <div class="field-wrap 1 2 3">
               <label>
                 Enrollment Limit: <span class="req">*</span>
               </label>
               <input type="number"required autocomplete="off"/>
             </div>
           
-            <div class="field-wrap">
+            <div class="field-wrap 1 2 3">
               <label>
                 Upper Limit: <span class="req">*</span>
               </label>
               <input type="number"required autocomplete="off"/>
             </div>
-            <div class="field-wrap">
+            <div class="field-wrap 1 2 3">
               <label>
                 Lower Limit: <span class="req">*</span>
               </label>
